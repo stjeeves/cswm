@@ -26,7 +26,7 @@ public class User {
 
     @ManyToOne
     @JsonBackReference
-    @JoinColumn(name="host_id", nullable=false)
+    @JoinColumn(name="host_id")
     private Host host;
 
     public User(String userEmail, String userPassword, String firstName, String lastName){
